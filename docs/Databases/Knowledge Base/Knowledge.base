@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Technical Knowledge
+    filters:
+      and:
+        - file.hasTag("knowledge")

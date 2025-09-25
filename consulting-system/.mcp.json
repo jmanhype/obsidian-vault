@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "obsidian-mcp": {
+      "command": "node",
+      "args": ["./mcp-servers/obsidian-mcp/server.js"],
+      "env": {
+        "OBSIDIAN_VAULT_PATH": "/Users/speed/Documents/Obsidian Vault",
+        "NODE_ENV": "development"
+      }
+    },
+    "task-master-ai": {
+      "command": "npx",
+      "args": ["-y", "--package=task-master-ai", "task-master-ai"],
+      "env": {
+        "ANTHROPIC_API_KEY": "sk-ant-api03-your-key-here",
+        "PERPLEXITY_API_KEY": "pplx-your-key-here"
+      }
+    }
+  }
+}

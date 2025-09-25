@@ -1,0 +1,34 @@
+{
+  "name": "obsidian-integration",
+  "version": "1.0.0",
+  "description": "Obsidian integration module for consulting system",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "config.js",
+    "utils.js",
+    "example.js",
+    "README.md"
+  ],
+  "scripts": {
+    "example": "node example.js",
+    "test": "echo 'No tests specified' && exit 0"
+  },
+  "keywords": [
+    "obsidian",
+    "integration",
+    "consulting",
+    "knowledge-management",
+    "note-taking"
+  ],
+  "dependencies": {},
+  "peerDependencies": {
+    "events": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Obsidian Integration Developer",
+  "license": "MIT"
+}

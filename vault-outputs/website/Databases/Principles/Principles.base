@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Zero Entropy Principles
+    filters:
+      and:
+        - file.hasTag("principle")

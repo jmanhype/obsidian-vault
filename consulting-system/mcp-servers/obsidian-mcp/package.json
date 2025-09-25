@@ -1,0 +1,37 @@
+{
+  "name": "obsidian-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP Server for Obsidian vault integration in consulting delivery system",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --inspect server.js",
+    "test": "jest"
+  },
+  "keywords": [
+    "mcp",
+    "obsidian",
+    "consulting",
+    "knowledge-management",
+    "model-context-protocol"
+  ],
+  "author": "Consulting Delivery System",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "consulting-system"
+  },
+  "bin": {
+    "obsidian-mcp": "./server.js"
+  }
+}

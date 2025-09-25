@@ -1,0 +1,39 @@
+# Multi-stage build for Obsidian Vault publishing
+FROM squidfunk/mkdocs-material:latest AS website-builder
+WORKDIR /docs
+COPY . /docs
+RUN mkdocs build -d /output/website
+
+FROM pandoc/core:latest AS pdf-builder
+WORKDIR /vault
+COPY Databases /vault/Databases
+RUN mkdir -p /output && \
+    find /vault -name "*.md" -type f -exec cat {} \; > /output/vault-complete.md && \
+    pandoc /output/vault-complete.md -o /output/vault-book.pdf --pdf-engine=xelatex || \
+    pandoc /output/vault-complete.md -o /output/vault-book.pdf
+
+FROM pandoc/core:latest AS epub-builder
+WORKDIR /vault
+COPY Databases /vault/Databases
+COPY index.md /vault/
+RUN mkdir -p /output && \
+    pandoc /vault/index.md /vault/Databases/**/*.md -o /output/vault-book.epub \
+    --metadata title="Obsidian Knowledge Vault" \
+    --metadata author="Speed" \
+    --toc --toc-depth=2
+
+FROM lunr/lunr:latest AS search-builder
+WORKDIR /vault
+COPY . /vault
+RUN mkdir -p /output/search && \
+    node -e "console.log('Search index would be built here')"
+
+# Final stage - combine all outputs
+FROM nginx:alpine
+COPY --from=website-builder /output/website /usr/share/nginx/html
+COPY --from=pdf-builder /output/vault-book.pdf /usr/share/nginx/html/downloads/
+COPY --from=epub-builder /output/vault-book.epub /usr/share/nginx/html/downloads/
+RUN mkdir -p /usr/share/nginx/html/downloads
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]

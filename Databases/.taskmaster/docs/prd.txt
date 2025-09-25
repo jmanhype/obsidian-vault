@@ -1,0 +1,31 @@
+PROJECT REQUIREMENTS: Active Projects Management System
+
+## Overview
+Manage and track all active development projects with their associated tasks, deadlines, and deliverables.
+
+## Core Requirements
+
+### 1. Project Tracking
+- Track project status (planning, active, completed, archived)
+- Monitor progress percentages
+- Deadline management
+- Resource allocation
+
+### 2. Deliverables Management
+- Define project deliverables
+- Track completion status
+- Quality assurance checkpoints
+- Client approval workflows
+
+### 3. Integration Points
+- Link to GitHub repositories
+- Connect to documentation
+- Reference design files
+- Track related communications
+
+## Implementation Priorities
+1. Set up project templates
+2. Create project dashboard
+3. Implement progress tracking
+4. Add deadline notifications
+5. Build reporting system

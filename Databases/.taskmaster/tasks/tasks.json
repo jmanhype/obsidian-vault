@@ -1,0 +1,78 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Set Up Project Templates",
+        "description": "Create reusable project templates with standardized fields for status, progress tracking, deadlines, and resource allocation.",
+        "details": "Implement a template system that allows for the creation and management of project templates. Each template should include:\n- Project name and description fields\n- Status options (planning, active, completed, archived)\n- Progress tracking mechanism (0-100%)\n- Deadline fields (start date, end date, milestones)\n- Resource allocation section (team members, roles, time allocation)\n\nImplementation steps:\n1. Design database schema for templates (templates table with fields for name, description, created_at, updated_at)\n2. Create template CRUD operations (API endpoints for create, read, update, delete)\n3. Implement template selection during project creation\n4. Add template management UI for administrators\n5. Include version control for templates",
+        "testStrategy": "1. Unit tests for template CRUD operations\n2. Integration tests for template selection during project creation\n3. UI tests for template management interface\n4. Validation tests for required fields\n5. Performance tests for template loading",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Create Project Dashboard",
+        "description": "Develop a comprehensive dashboard to visualize and manage all active projects with filtering and sorting capabilities.",
+        "details": "Build a dashboard that provides an overview of all projects with the following features:\n- Project cards showing key information (name, status, progress, deadline)\n- Filtering options (by status, deadline, team member)\n- Sorting capabilities (by deadline, progress, priority)\n- Quick action buttons (edit, archive, view details)\n- Summary statistics (total projects, on-track vs. delayed)\n\nImplementation steps:\n1. Design responsive dashboard layout\n2. Implement project card component with status indicators\n3. Create filter and sort functionality\n4. Add search capability\n5. Implement dashboard refresh/polling mechanism\n6. Add export functionality (CSV, PDF)",
+        "testStrategy": "1. UI component tests for dashboard elements\n2. Integration tests for filtering and sorting\n3. Responsive design tests across device sizes\n4. Performance tests with large number of projects\n5. User acceptance testing for dashboard usability",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Implement Progress Tracking",
+        "description": "Build functionality to track project progress, including deliverables management, completion status, and quality assurance checkpoints.",
+        "details": "Create a progress tracking system that includes:\n- Deliverable definition and management\n- Task completion tracking\n- Quality assurance checkpoint integration\n- Progress calculation algorithm\n- Visual progress indicators (progress bars, charts)\n\nImplementation steps:\n1. Design database schema for deliverables and tasks\n2. Create deliverable CRUD operations\n3. Implement task status tracking (not started, in progress, completed, blocked)\n4. Build QA checkpoint functionality with approval workflows\n5. Develop progress calculation logic based on completed deliverables/tasks\n6. Create progress visualization components\n7. Implement client approval workflow for deliverables",
+        "testStrategy": "1. Unit tests for progress calculation algorithm\n2. Integration tests for deliverable status updates\n3. UI tests for progress visualization\n4. Workflow tests for QA checkpoints and approvals\n5. Edge case testing for progress calculation with various project states",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Add Deadline Notifications",
+        "description": "Implement a notification system for upcoming and missed deadlines, with email alerts and in-app notifications.",
+        "details": "Build a notification system that includes:\n- Deadline tracking for projects and deliverables\n- Configurable notification thresholds (e.g., 1 day, 1 week before deadline)\n- Email notification service\n- In-app notification center\n- Notification preferences per user\n\nImplementation steps:\n1. Create notification service architecture\n2. Implement deadline checking scheduled job\n3. Build email notification templates and sending mechanism\n4. Develop in-app notification component and storage\n5. Create notification preferences UI\n6. Implement notification marking (read/unread, dismiss)\n7. Add notification history view",
+        "testStrategy": "1. Unit tests for deadline calculation logic\n2. Integration tests for notification generation\n3. Email delivery tests\n4. UI tests for notification display\n5. Performance tests for notification system under load\n6. Scheduled job reliability testing",
+        "priority": "medium",
+        "dependencies": [
+          2,
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Build Integration and Reporting System",
+        "description": "Develop integration points with external systems (GitHub, documentation, design files) and create comprehensive reporting capabilities.",
+        "details": "Implement system integrations and reporting features including:\n- GitHub repository linking (commits, PRs, issues)\n- Documentation system connections\n- Design file references and previews\n- Communication tracking (emails, messages)\n- Customizable report generation\n- Export options (PDF, Excel, CSV)\n\nImplementation steps:\n1. Design and implement GitHub API integration\n2. Create documentation system connectors (based on common doc systems)\n3. Build design file preview capabilities\n4. Implement communication tracking and linking\n5. Develop report builder with customizable metrics\n6. Create export functionality with multiple format options\n7. Add scheduled report generation and distribution",
+        "testStrategy": "1. Integration tests for each external system connection\n2. Authentication and authorization tests for API integrations\n3. Data integrity tests for imported information\n4. Report generation accuracy tests\n5. Export format validation\n6. Performance tests for report generation with large datasets\n7. Error handling tests for failed integrations",
+        "priority": "low",
+        "dependencies": [
+          2,
+          3,
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-22T13:37:03.615Z",
+      "updated": "2025-08-22T13:37:03.615Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

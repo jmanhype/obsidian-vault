@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Active Projects
+    filters:
+      and:
+        - file.hasTag("project")

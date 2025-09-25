@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  vault-docs:
+    build:
+      context: .
+      dockerfile: Dockerfile.vault-publisher
+    image: vault-publisher:latest
+    container_name: obsidian-vault-docs
+    ports:
+      - "8888:8000"
+    volumes:
+      # Mount vault for live updates (optional)
+      - ./:/docs:ro
+    environment:
+      - SITE_URL=http://vault.local
+      - ENABLE_PDF_EXPORT=true
+      - ENABLE_SEARCH=true
+    labels:
+      # Coolify labels for automatic configuration
+      - coolify.managed=true
+      - coolify.applicationId=vault-docs
+      - coolify.type=application
+      - coolify.pullRequest.0.domain=vault-docs.local
+    restart: unless-stopped
+    networks:
+      - coolify
+
+  # Optional: Vector database for semantic search
+  chromadb:
+    image: chromadb/chroma:latest
+    container_name: vault-chromadb
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma-data:/chroma/chroma
+    environment:
+      - IS_PERSISTENT=TRUE
+      - PERSIST_DIRECTORY=/chroma/chroma
+    networks:
+      - coolify
+
+networks:
+  coolify:
+    external: true
+
+volumes:
+  chroma-data:
+    driver: local

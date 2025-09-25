@@ -1,0 +1,1516 @@
+{
+  "summary": {
+    "total_files": 102,
+    "total_size_mb": 0.3225259780883789,
+    "scan_date": "2025-08-22T16:48:38.991688",
+    "vault_path": "/Users/speed/Documents/Obsidian Vault",
+    "total_links": 120,
+    "broken_links_count": 57,
+    "total_images": 0,
+    "large_images": 0,
+    "orphaned_files_count": 84
+  },
+  "broken_links": [
+    {
+      "file": ".windsurf/rules/windsurf_rules.md",
+      "broken_link": ".windsurf/rules/prisma.md",
+      "type": "markdown_link"
+    },
+    {
+      "file": ".windsurf/rules/self_improve.md",
+      "broken_link": ".windsurf/rules/prisma.md",
+      "type": "markdown_link"
+    },
+    {
+      "file": "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md",
+      "broken_link": "MCP Server Configuration",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md",
+      "broken_link": "Obsidian as Development Hub",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Singleton Pattern.md",
+      "broken_link": "Factory Pattern",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Singleton Pattern.md",
+      "broken_link": "Builder Pattern",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Singleton Pattern.md",
+      "broken_link": "Prototype Pattern",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Natural Language Container Control Pattern.md",
+      "broken_link": "Infrastructure as Code",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Natural Language Container Control Pattern.md",
+      "broken_link": "GitOps Pattern",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Natural Language Container Control Pattern.md",
+      "broken_link": "Declarative Pipeline Pattern",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Guard Clause Pattern.md",
+      "broken_link": "Early Return",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Guard Clause Pattern.md",
+      "broken_link": "Fail Fast",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Patterns/Guard Clause Pattern.md",
+      "broken_link": "Defensive Programming",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Mobile App Development.md",
+      "broken_link": "API Documentation",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Mobile App Development.md",
+      "broken_link": "Mobile Design Guidelines",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Content Migration.md",
+      "broken_link": "Migration Scripts",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Content Migration.md",
+      "broken_link": "Data Mapping Document",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Website Redesign.md",
+      "broken_link": "Design System Documentation",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Projects/Website Redesign.md",
+      "broken_link": "Client Meeting Notes",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Laws/Gall's Law.md",
+      "broken_link": "Brooks' Law",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Laws/Gall's Law.md",
+      "broken_link": "Second System Effect",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Laws/Conway's Law.md",
+      "broken_link": "Brooks' Law",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Laws/Conway's Law.md",
+      "broken_link": "Parkinson's Law",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Laws/Conway's Law.md",
+      "broken_link": "The Mythical Man-Month",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+      "broken_link": "Dagger CI/CD",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+      "broken_link": "Apollo MCP Server",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+      "broken_link": "YAML Syntax",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+      "broken_link": "Obsidian Plugins",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+      "broken_link": "High-Entropy APIs",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md",
+      "broken_link": "Excalidraw SVG Animation",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md",
+      "broken_link": "FFmpeg Audio Processing",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md",
+      "broken_link": "Neural TTS Systems",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Integration.md",
+      "broken_link": "Apollo MCP Server",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Integration.md",
+      "broken_link": "Dagger CI/CD",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Integration.md",
+      "broken_link": "GraphQL Integration",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger Integration.md",
+      "broken_link": "Container Orchestration",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/Atomic Habits.md",
+      "broken_link": "Habit Loop",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/Atomic Habits.md",
+      "broken_link": "Compound Effect",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/Atomic Habits.md",
+      "broken_link": "Behavior Change",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/How to Take Smart Notes.md",
+      "broken_link": "Obsidian Setup",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/How to Take Smart Notes.md",
+      "broken_link": "Note Templates",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/How to Take Smart Notes.md",
+      "broken_link": "Linking Strategy",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/The Phoenix Project.md",
+      "broken_link": "DevOps Handbook",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/The Phoenix Project.md",
+      "broken_link": "The Goal by Eliyahu Goldratt",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Reading List/The Phoenix Project.md",
+      "broken_link": "Continuous Delivery",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Make It Work Then Make It Right.md",
+      "broken_link": "Worse Is Better",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Make It Work Then Make It Right.md",
+      "broken_link": "Ship Early Ship Often",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Natural Language as Universal Interface.md",
+      "broken_link": "Principle of Least Astonishment",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Filter by Semantic Identity Not Physical Location.md",
+      "broken_link": "Separation of Concerns",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Filter by Semantic Identity Not Physical Location.md",
+      "broken_link": "Single Source of Truth",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/Filter by Semantic Identity Not Physical Location.md",
+      "broken_link": "Law of Demeter",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/YAGNI.md",
+      "broken_link": "KISS - Keep It Simple Stupid",
+      "type": "wiki_link"
+    },
+    {
+      "file": "Databases/Principles/YAGNI.md",
+      "broken_link": "Premature Optimization",
+      "type": "wiki_link"
+    },
+    {
+      "file": ".github/instructions/self_improve.instructions.md",
+      "broken_link": ".github/instructions/prisma.instructions.md",
+      "type": "markdown_link"
+    },
+    {
+      "file": ".github/instructions/taskmaster.instructions.md",
+      "broken_link": "dev_workflow.md",
+      "type": "markdown_link"
+    },
+    {
+      "file": ".github/instructions/vscode_rules.instructions.md",
+      "broken_link": ".github/instructions/prisma.instructions.md",
+      "type": "markdown_link"
+    },
+    {
+      "file": "Templates/Project Template.md",
+      "broken_link": "Link to related notes",
+      "type": "wiki_link"
+    }
+  ],
+  "orphaned_files": [
+    "Untitled Kanban.md",
+    "CLAUDE.md",
+    ".windsurf/rules/taskmaster.md",
+    ".windsurf/rules/self_improve.md",
+    "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md",
+    "Databases/Patterns/Singleton Pattern.md",
+    "Databases/Patterns/Guard Clause Pattern.md",
+    "Databases/Projects/Mobile App Development.md",
+    "Databases/Projects/Q1 Marketing Campaign.md",
+    "Databases/Projects/Content Migration.md",
+    "Databases/Projects/Website Redesign.md",
+    "Databases/Laws/Gall's Law.md",
+    "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+    "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+    "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md",
+    "Databases/Reading List/Atomic Habits.md",
+    "Databases/Reading List/Deep Work.md",
+    "Databases/Reading List/How to Take Smart Notes.md",
+    "Databases/Reading List/Untitled Kanban.md",
+    "Databases/Reading List/The Phoenix Project.md",
+    "Databases/Principles/Natural Language as Universal Interface.md",
+    ".claude/TM_COMMANDS_GUIDE.md",
+    ".claude/agents/task-checker.md",
+    ".claude/agents/task-orchestrator.md",
+    ".claude/agents/task-executor.md",
+    ".claude/commands/tm/learn.md",
+    ".claude/commands/tm/tm-main.md",
+    ".claude/commands/tm/help.md",
+    ".claude/commands/tm/init/init-project.md",
+    ".claude/commands/tm/init/init-project-quick.md",
+    ".claude/commands/tm/next/next-task.md",
+    ".claude/commands/tm/expand/expand-all-tasks.md",
+    ".claude/commands/tm/expand/expand-task.md",
+    ".claude/commands/tm/complexity-report/complexity-report.md",
+    ".claude/commands/tm/update/update-task.md",
+    ".claude/commands/tm/update/update-single-task.md",
+    ".claude/commands/tm/update/update-tasks-from-id.md",
+    ".claude/commands/tm/show/show-task.md",
+    ".claude/commands/tm/setup/quick-install-taskmaster.md",
+    ".claude/commands/tm/setup/install-taskmaster.md",
+    ".claude/commands/tm/workflows/auto-implement-tasks.md",
+    ".claude/commands/tm/workflows/command-pipeline.md",
+    ".claude/commands/tm/workflows/smart-workflow.md",
+    ".claude/commands/tm/analyze-complexity/analyze-complexity.md",
+    ".claude/commands/tm/utils/analyze-project.md",
+    ".claude/commands/tm/models/view-models.md",
+    ".claude/commands/tm/models/setup-models.md",
+    ".claude/commands/tm/status/project-status.md",
+    ".claude/commands/tm/clear-subtasks/clear-all-subtasks.md",
+    ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+    ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+    ".claude/commands/tm/remove-dependency/remove-dependency.md",
+    ".claude/commands/tm/remove-task/remove-task.md",
+    ".claude/commands/tm/add-task/add-task.md",
+    ".claude/commands/tm/add-dependency/add-dependency.md",
+    ".claude/commands/tm/list/list-tasks-by-status.md",
+    ".claude/commands/tm/list/list-tasks-with-subtasks.md",
+    ".claude/commands/tm/list/list-tasks.md",
+    ".claude/commands/tm/generate/generate-tasks.md",
+    ".claude/commands/tm/set-status/to-in-progress.md",
+    ".claude/commands/tm/set-status/to-done.md",
+    ".claude/commands/tm/set-status/to-pending.md",
+    ".claude/commands/tm/set-status/to-review.md",
+    ".claude/commands/tm/set-status/to-cancelled.md",
+    ".claude/commands/tm/set-status/to-deferred.md",
+    ".claude/commands/tm/parse-prd/parse-prd-with-research.md",
+    ".claude/commands/tm/parse-prd/parse-prd.md",
+    ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+    ".claude/commands/tm/remove-subtask/remove-subtask.md",
+    ".claude/commands/tm/sync-readme/sync-readme.md",
+    ".claude/commands/tm/add-subtask/add-subtask.md",
+    ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+    "Scripts/vault-dashboard-20250822.md",
+    ".github/instructions/self_improve.instructions.md",
+    ".github/instructions/taskmaster.instructions.md",
+    ".github/instructions/dev_workflow.instructions.md",
+    "Templates/Law Template.md",
+    "Templates/Pattern Template.md",
+    "Templates/Book Template.md",
+    "Templates/Principle Template.md",
+    "Templates/Knowledge Entry Template.md",
+    "Templates/Article Template.md",
+    "Templates/Project Template.md",
+    ".taskmaster/CLAUDE.md"
+  ],
+  "tag_analysis": {
+    "total_unique_tags": 90,
+    "most_common_tags": [
+      [
+        "5",
+        46
+      ],
+      [
+        "3",
+        12
+      ],
+      [
+        "2",
+        9
+      ],
+      [
+        "4",
+        9
+      ],
+      [
+        "1",
+        9
+      ],
+      [
+        "12",
+        8
+      ],
+      [
+        "8",
+        7
+      ],
+      [
+        "knowledge",
+        6
+      ],
+      [
+        "23",
+        6
+      ],
+      [
+        "45",
+        6
+      ]
+    ],
+    "single_use_tags": [
+      "taskmaster",
+      "kanban",
+      "automation",
+      "design-pattern",
+      "creational",
+      "apollo-mcp",
+      "containers",
+      "cicd",
+      "clean-code",
+      "readability",
+      "mobile",
+      "ios",
+      "android",
+      "development",
+      "marketing",
+      "campaign",
+      "social-media",
+      "data",
+      "migration",
+      "backend",
+      "web",
+      "design",
+      "client-work",
+      "systems-thinking",
+      "complexity",
+      "architecture",
+      "organization-design",
+      "setup",
+      "quickstart",
+      "yaml",
+      "high-entropy",
+      "tts",
+      "kokoro",
+      "excalidraw",
+      "video-generation",
+      "graphql",
+      "refactoring",
+      "pragmatism",
+      "interfaces",
+      "ai",
+      "data-organization",
+      "simplicity",
+      "agile",
+      "78",
+      "25",
+      "30",
+      "31",
+      "41",
+      "43",
+      "47",
+      "52",
+      "18",
+      "45-47",
+      "66",
+      ""
+    ],
+    "similar_tags": [
+      {
+        "tag1": "cicd",
+        "tag2": "ci-cd",
+        "count1": 1,
+        "count2": 2
+      }
+    ],
+    "tag_files": {
+      "pattern": [
+        "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md",
+        "Databases/Patterns/Singleton Pattern.md",
+        "Databases/Patterns/Natural Language Container Control Pattern.md",
+        "Databases/Patterns/Guard Clause Pattern.md",
+        "Templates/Pattern Template.md"
+      ],
+      "taskmaster": [
+        "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md"
+      ],
+      "obsidian": [
+        "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md",
+        "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md"
+      ],
+      "kanban": [
+        "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md"
+      ],
+      "automation": [
+        "Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md"
+      ],
+      "design-pattern": [
+        "Databases/Patterns/Singleton Pattern.md"
+      ],
+      "creational": [
+        "Databases/Patterns/Singleton Pattern.md"
+      ],
+      "apollo-mcp": [
+        "Databases/Patterns/Natural Language Container Control Pattern.md"
+      ],
+      "dagger": [
+        "Databases/Patterns/Natural Language Container Control Pattern.md",
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "containers": [
+        "Databases/Patterns/Natural Language Container Control Pattern.md"
+      ],
+      "cicd": [
+        "Databases/Patterns/Natural Language Container Control Pattern.md"
+      ],
+      "natural-language": [
+        "Databases/Patterns/Natural Language Container Control Pattern.md",
+        "Databases/Principles/Natural Language as Universal Interface.md"
+      ],
+      "clean-code": [
+        "Databases/Patterns/Guard Clause Pattern.md"
+      ],
+      "readability": [
+        "Databases/Patterns/Guard Clause Pattern.md"
+      ],
+      "project": [
+        "Databases/Projects/Mobile App Development.md",
+        "Databases/Projects/Q1 Marketing Campaign.md",
+        "Databases/Projects/Content Migration.md",
+        "Databases/Projects/Website Redesign.md"
+      ],
+      "mobile": [
+        "Databases/Projects/Mobile App Development.md"
+      ],
+      "ios": [
+        "Databases/Projects/Mobile App Development.md"
+      ],
+      "android": [
+        "Databases/Projects/Mobile App Development.md"
+      ],
+      "development": [
+        "Databases/Projects/Mobile App Development.md"
+      ],
+      "marketing": [
+        "Databases/Projects/Q1 Marketing Campaign.md"
+      ],
+      "campaign": [
+        "Databases/Projects/Q1 Marketing Campaign.md"
+      ],
+      "social-media": [
+        "Databases/Projects/Q1 Marketing Campaign.md"
+      ],
+      "data": [
+        "Databases/Projects/Content Migration.md"
+      ],
+      "migration": [
+        "Databases/Projects/Content Migration.md"
+      ],
+      "backend": [
+        "Databases/Projects/Content Migration.md"
+      ],
+      "web": [
+        "Databases/Projects/Website Redesign.md"
+      ],
+      "design": [
+        "Databases/Projects/Website Redesign.md"
+      ],
+      "client-work": [
+        "Databases/Projects/Website Redesign.md"
+      ],
+      "law": [
+        "Databases/Laws/Gall's Law.md",
+        "Databases/Laws/Conway's Law.md",
+        "Templates/Law Template.md"
+      ],
+      "systems-thinking": [
+        "Databases/Laws/Gall's Law.md"
+      ],
+      "complexity": [
+        "Databases/Laws/Gall's Law.md"
+      ],
+      "architecture": [
+        "Databases/Laws/Conway's Law.md"
+      ],
+      "organization-design": [
+        "Databases/Laws/Conway's Law.md"
+      ],
+      "knowledge": [
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+        "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md",
+        "Templates/Knowledge Entry Template.md"
+      ],
+      "apollo": [
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "mcp": [
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md",
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "setup": [
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md"
+      ],
+      "quickstart": [
+        "Databases/Knowledge Base/Apollo Dagger Setup Guide.md"
+      ],
+      "containerization": [
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "ci-cd": [
+        "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "yaml": [
+        "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md"
+      ],
+      "filtering": [
+        "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md",
+        "Databases/Principles/Filter by Semantic Identity Not Physical Location.md"
+      ],
+      "high-entropy": [
+        "Databases/Knowledge Base/Obsidian Bases Filter Syntax.md"
+      ],
+      "tts": [
+        "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md"
+      ],
+      "kokoro": [
+        "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md"
+      ],
+      "excalidraw": [
+        "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md"
+      ],
+      "video-generation": [
+        "Databases/Knowledge Base/Kokoro TTS Excalidraw Pipeline.md"
+      ],
+      "graphql": [
+        "Databases/Knowledge Base/Apollo Dagger Integration.md"
+      ],
+      "reading": [
+        "Databases/Reading List/Atomic Habits.md",
+        "Databases/Reading List/Deep Work.md",
+        "Databases/Reading List/How to Take Smart Notes.md",
+        "Databases/Reading List/The Phoenix Project.md"
+      ],
+      "principle": [
+        "Databases/Principles/Make It Work Then Make It Right.md",
+        "Databases/Principles/Natural Language as Universal Interface.md",
+        "Databases/Principles/Filter by Semantic Identity Not Physical Location.md",
+        "Databases/Principles/YAGNI.md",
+        "Templates/Principle Template.md"
+      ],
+      "refactoring": [
+        "Databases/Principles/Make It Work Then Make It Right.md"
+      ],
+      "pragmatism": [
+        "Databases/Principles/Make It Work Then Make It Right.md"
+      ],
+      "interfaces": [
+        "Databases/Principles/Natural Language as Universal Interface.md"
+      ],
+      "ai": [
+        "Databases/Principles/Natural Language as Universal Interface.md"
+      ],
+      "data-organization": [
+        "Databases/Principles/Filter by Semantic Identity Not Physical Location.md"
+      ],
+      "simplicity": [
+        "Databases/Principles/YAGNI.md"
+      ],
+      "agile": [
+        "Databases/Principles/YAGNI.md"
+      ],
+      "5": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/update/update-single-task.md",
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/analyze-complexity/analyze-complexity.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+        ".claude/commands/tm/remove-dependency/remove-dependency.md",
+        ".claude/commands/tm/remove-dependency/remove-dependency.md",
+        ".claude/commands/tm/remove-dependency/remove-dependency.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+        ".claude/commands/tm/remove-subtask/remove-subtask.md",
+        ".claude/commands/tm/remove-subtask/remove-subtask.md",
+        ".claude/commands/tm/remove-subtask/remove-subtask.md",
+        ".claude/commands/tm/sync-readme/sync-readme.md",
+        ".claude/commands/tm/sync-readme/sync-readme.md",
+        ".claude/commands/tm/add-subtask/add-subtask.md",
+        ".claude/commands/tm/add-subtask/add-subtask.md",
+        ".claude/commands/tm/add-subtask/add-subtask.md",
+        ".claude/commands/tm/add-subtask/add-subtask.md",
+        ".claude/commands/tm/add-subtask/add-subtask.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        "Kanban/Principles Tasks.md",
+        "Kanban/Reading_List Tasks.md",
+        "Kanban/Patterns Tasks.md",
+        "Kanban/Projects Tasks.md",
+        "Kanban/Laws Tasks.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/Knowledge_Base Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "12": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/analyze-complexity/analyze-complexity.md",
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md"
+      ],
+      "23": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/update/update-task.md",
+        ".claude/commands/tm/analyze-complexity/analyze-complexity.md",
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md"
+      ],
+      "34": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/add-task/add-task.md"
+      ],
+      "45": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/show/show-task.md",
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md"
+      ],
+      "67": [
+        ".claude/commands/tm/complexity-report/complexity-report.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md"
+      ],
+      "78": [
+        ".claude/commands/tm/complexity-report/complexity-report.md"
+      ],
+      "24": [
+        ".claude/commands/tm/update/update-task.md",
+        ".claude/commands/tm/update/update-task.md",
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/utils/analyze-project.md"
+      ],
+      "25": [
+        ".claude/commands/tm/update/update-task.md"
+      ],
+      "30": [
+        ".claude/commands/tm/update/update-task.md"
+      ],
+      "31": [
+        ".claude/commands/tm/update/update-task.md"
+      ],
+      "6": [
+        ".claude/commands/tm/update/update-single-task.md",
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "7": [
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "8": [
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        ".claude/commands/tm/sync-readme/sync-readme.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "9": [
+        ".claude/commands/tm/update/update-tasks-from-id.md",
+        ".claude/commands/tm/remove-task/remove-task.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "41": [
+        ".claude/commands/tm/show/show-task.md"
+      ],
+      "42": [
+        ".claude/commands/tm/show/show-task.md",
+        ".claude/commands/tm/show/show-task.md"
+      ],
+      "43": [
+        ".claude/commands/tm/show/show-task.md"
+      ],
+      "46": [
+        ".claude/commands/tm/show/show-task.md",
+        ".claude/commands/tm/utils/analyze-project.md"
+      ],
+      "47": [
+        ".claude/commands/tm/show/show-task.md"
+      ],
+      "52": [
+        ".claude/commands/tm/show/show-task.md"
+      ],
+      "15": [
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md"
+      ],
+      "50": [
+        ".claude/commands/tm/utils/analyze-project.md",
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md"
+      ],
+      "18": [
+        ".claude/commands/tm/fix-dependencies/fix-dependencies.md"
+      ],
+      "3": [
+        ".claude/commands/tm/remove-dependency/remove-dependency.md",
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        ".claude/commands/tm/sync-readme/sync-readme.md",
+        "Kanban/Principles Tasks.md",
+        "Kanban/Reading_List Tasks.md",
+        "Kanban/Patterns Tasks.md",
+        "Kanban/Projects Tasks.md",
+        "Kanban/Laws Tasks.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/Knowledge_Base Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "2": [
+        ".claude/commands/tm/remove-dependency/remove-dependency.md",
+        "Kanban/Principles Tasks.md",
+        "Kanban/Reading_List Tasks.md",
+        "Kanban/Patterns Tasks.md",
+        "Kanban/Projects Tasks.md",
+        "Kanban/Laws Tasks.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/Knowledge_Base Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "45-47": [
+        ".claude/commands/tm/add-task/add-task.md"
+      ],
+      "4": [
+        ".claude/commands/tm/add-dependency/add-dependency.md",
+        "Kanban/Principles Tasks.md",
+        "Kanban/Reading_List Tasks.md",
+        "Kanban/Patterns Tasks.md",
+        "Kanban/Projects Tasks.md",
+        "Kanban/Laws Tasks.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/Knowledge_Base Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "66": [
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md"
+      ],
+      "1": [
+        ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+        "Kanban/Principles Tasks.md",
+        "Kanban/Reading_List Tasks.md",
+        "Kanban/Patterns Tasks.md",
+        "Kanban/Projects Tasks.md",
+        "Kanban/Laws Tasks.md",
+        "Kanban/Main Tasks.md",
+        "Kanban/Knowledge_Base Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "89": [
+        ".claude/commands/tm/remove-subtask/remove-subtask.md",
+        ".claude/commands/tm/remove-subtask/remove-subtask.md"
+      ],
+      "10": [
+        "Kanban/Main Tasks.md",
+        "Kanban/0 Tasks.md"
+      ],
+      "": [
+        "Templates/Project Template.md"
+      ]
+    }
+  },
+  "metadata_issues": [
+    {
+      "file": "Untitled Kanban.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": "CLAUDE.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".windsurf/rules/windsurf_rules.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": ".windsurf/rules/self_improve.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": "Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Databases/Reading List/Untitled Kanban.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": ".claude/TM_COMMANDS_GUIDE.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/agents/task-executor.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": ".claude/commands/tm/learn.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/tm-main.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/help.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/init/init-project.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/init/init-project-quick.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/next/next-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/expand/expand-all-tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/expand/expand-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/complexity-report/complexity-report.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/update/update-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/update/update-single-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/update/update-tasks-from-id.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/show/show-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/setup/quick-install-taskmaster.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/setup/install-taskmaster.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/workflows/auto-implement-tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/workflows/command-pipeline.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/workflows/smart-workflow.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/analyze-complexity/analyze-complexity.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/utils/analyze-project.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/models/view-models.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/models/setup-models.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/status/project-status.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/clear-subtasks/clear-all-subtasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/clear-subtasks/clear-subtasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/fix-dependencies/fix-dependencies.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/remove-dependency/remove-dependency.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/remove-task/remove-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/add-task/add-task.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/add-dependency/add-dependency.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/list/list-tasks-by-status.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/list/list-tasks-with-subtasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/list/list-tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/generate/generate-tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-in-progress.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-done.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-pending.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-review.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-cancelled.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/set-status/to-deferred.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/parse-prd/parse-prd-with-research.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/parse-prd/parse-prd.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/validate-dependencies/validate-dependencies.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/remove-subtask/remove-subtask.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/sync-readme/sync-readme.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/add-subtask/add-subtask.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".claude/commands/tm/add-subtask/convert-task-to-subtask.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Principles Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Reading_List Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Patterns Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Projects Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Laws Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Main Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/Knowledge_Base Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Kanban/0 Tasks.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": "Scripts/vault-dashboard-20250822.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    },
+    {
+      "file": ".github/instructions/self_improve.instructions.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": ".github/instructions/vscode_rules.instructions.md",
+      "issue": "no_tags",
+      "description": "File has no tags in frontmatter or content"
+    },
+    {
+      "file": "Templates/Project Template.md",
+      "issue": "invalid_date_format",
+      "description": "Invalid date format in date: tags: []"
+    },
+    {
+      "file": ".taskmaster/CLAUDE.md",
+      "issue": "missing_frontmatter",
+      "description": "File has no YAML frontmatter"
+    }
+  ],
+  "file_structure": {
+    "folders": {
+      ".": [
+        "Untitled Kanban.md",
+        "CLAUDE.md"
+      ],
+      ".windsurf/rules": [
+        "dev_workflow.md",
+        "windsurf_rules.md",
+        "taskmaster.md",
+        "self_improve.md"
+      ],
+      "Databases/Patterns": [
+        "TaskMaster Obsidian Kanban Pattern.md",
+        "Singleton Pattern.md",
+        "Natural Language Container Control Pattern.md",
+        "Guard Clause Pattern.md"
+      ],
+      "Databases/Projects": [
+        "Mobile App Development.md",
+        "Q1 Marketing Campaign.md",
+        "Content Migration.md",
+        "Website Redesign.md"
+      ],
+      "Databases/Laws": [
+        "Gall's Law.md",
+        "Conway's Law.md"
+      ],
+      "Databases/Knowledge Base": [
+        "Apollo Dagger Setup Guide.md",
+        "Apollo Dagger MCP Capabilities.md",
+        "Obsidian Bases Filter Syntax.md",
+        "Kokoro TTS Excalidraw Pipeline.md",
+        "Apollo Dagger Integration.md"
+      ],
+      "Databases/Reading List": [
+        "Atomic Habits.md",
+        "Deep Work.md",
+        "How to Take Smart Notes.md",
+        "Untitled Kanban.md",
+        "The Phoenix Project.md"
+      ],
+      "Databases/Principles": [
+        "Make It Work Then Make It Right.md",
+        "Natural Language as Universal Interface.md",
+        "Filter by Semantic Identity Not Physical Location.md",
+        "YAGNI.md"
+      ],
+      ".claude": [
+        "TM_COMMANDS_GUIDE.md"
+      ],
+      ".claude/agents": [
+        "task-checker.md",
+        "task-orchestrator.md",
+        "task-executor.md"
+      ],
+      ".claude/commands/tm": [
+        "learn.md",
+        "tm-main.md",
+        "help.md"
+      ],
+      ".claude/commands/tm/init": [
+        "init-project.md",
+        "init-project-quick.md"
+      ],
+      ".claude/commands/tm/next": [
+        "next-task.md"
+      ],
+      ".claude/commands/tm/expand": [
+        "expand-all-tasks.md",
+        "expand-task.md"
+      ],
+      ".claude/commands/tm/complexity-report": [
+        "complexity-report.md"
+      ],
+      ".claude/commands/tm/update": [
+        "update-task.md",
+        "update-single-task.md",
+        "update-tasks-from-id.md"
+      ],
+      ".claude/commands/tm/show": [
+        "show-task.md"
+      ],
+      ".claude/commands/tm/setup": [
+        "quick-install-taskmaster.md",
+        "install-taskmaster.md"
+      ],
+      ".claude/commands/tm/workflows": [
+        "auto-implement-tasks.md",
+        "command-pipeline.md",
+        "smart-workflow.md"
+      ],
+      ".claude/commands/tm/analyze-complexity": [
+        "analyze-complexity.md"
+      ],
+      ".claude/commands/tm/utils": [
+        "analyze-project.md"
+      ],
+      ".claude/commands/tm/models": [
+        "view-models.md",
+        "setup-models.md"
+      ],
+      ".claude/commands/tm/status": [
+        "project-status.md"
+      ],
+      ".claude/commands/tm/clear-subtasks": [
+        "clear-all-subtasks.md",
+        "clear-subtasks.md"
+      ],
+      ".claude/commands/tm/fix-dependencies": [
+        "fix-dependencies.md"
+      ],
+      ".claude/commands/tm/remove-dependency": [
+        "remove-dependency.md"
+      ],
+      ".claude/commands/tm/remove-task": [
+        "remove-task.md"
+      ],
+      ".claude/commands/tm/add-task": [
+        "add-task.md"
+      ],
+      ".claude/commands/tm/add-dependency": [
+        "add-dependency.md"
+      ],
+      ".claude/commands/tm/list": [
+        "list-tasks-by-status.md",
+        "list-tasks-with-subtasks.md",
+        "list-tasks.md"
+      ],
+      ".claude/commands/tm/generate": [
+        "generate-tasks.md"
+      ],
+      ".claude/commands/tm/set-status": [
+        "to-in-progress.md",
+        "to-done.md",
+        "to-pending.md",
+        "to-review.md",
+        "to-cancelled.md",
+        "to-deferred.md"
+      ],
+      ".claude/commands/tm/parse-prd": [
+        "parse-prd-with-research.md",
+        "parse-prd.md"
+      ],
+      ".claude/commands/tm/validate-dependencies": [
+        "validate-dependencies.md"
+      ],
+      ".claude/commands/tm/remove-subtask": [
+        "remove-subtask.md"
+      ],
+      ".claude/commands/tm/sync-readme": [
+        "sync-readme.md"
+      ],
+      ".claude/commands/tm/add-subtask": [
+        "add-subtask.md",
+        "convert-task-to-subtask.md"
+      ],
+      "Kanban": [
+        "Principles Tasks.md",
+        "Reading_List Tasks.md",
+        "Patterns Tasks.md",
+        "Projects Tasks.md",
+        "Laws Tasks.md",
+        "Main Tasks.md",
+        "Knowledge_Base Tasks.md",
+        "0 Tasks.md"
+      ],
+      "Scripts": [
+        "vault-dashboard-20250822.md"
+      ],
+      ".github/instructions": [
+        "self_improve.instructions.md",
+        "taskmaster.instructions.md",
+        "vscode_rules.instructions.md",
+        "dev_workflow.instructions.md"
+      ],
+      "Templates": [
+        "Law Template.md",
+        "Pattern Template.md",
+        "Book Template.md",
+        "Principle Template.md",
+        "Knowledge Entry Template.md",
+        "Article Template.md",
+        "Project Template.md"
+      ],
+      ".taskmaster": [
+        "CLAUDE.md"
+      ]
+    },
+    "folder_count": 42,
+    "naming_issues": [
+      {
+        "file": "Databases/Laws/Gall's Law.md",
+        "issue": "special_characters",
+        "description": "Filename contains special characters that might cause issues"
+      },
+      {
+        "file": "Databases/Laws/Conway's Law.md",
+        "issue": "special_characters",
+        "description": "Filename contains special characters that might cause issues"
+      },
+      {
+        "file": "Kanban/Reading_List Tasks.md",
+        "issue": "special_characters",
+        "description": "Filename contains special characters that might cause issues"
+      },
+      {
+        "file": "Kanban/Knowledge_Base Tasks.md",
+        "issue": "special_characters",
+        "description": "Filename contains special characters that might cause issues"
+      }
+    ]
+  },
+  "image_issues": [],
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "links",
+      "action": "Fix 57 broken links",
+      "impact": "Improves navigation and prevents user frustration"
+    },
+    {
+      "priority": "medium",
+      "category": "tags",
+      "action": "Consolidate 1 similar tag pairs",
+      "impact": "Improves tag consistency and findability"
+    },
+    {
+      "priority": "low",
+      "category": "tags",
+      "action": "Review 55 single-use tags",
+      "impact": "Reduces tag clutter and improves organization"
+    },
+    {
+      "priority": "medium",
+      "category": "structure",
+      "action": "Review 84 orphaned files",
+      "impact": "Improves content discoverability"
+    },
+    {
+      "priority": "medium",
+      "category": "metadata",
+      "action": "Fix 68 metadata issues",
+      "impact": "Improves data consistency and automation"
+    }
+  ],
+  "large_images": []
+}

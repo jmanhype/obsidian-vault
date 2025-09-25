@@ -1,0 +1,20 @@
+{
+  "name": "obsidian-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server for Obsidian vault integration",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "glob": "^10.3.10",
+    "markdown-it": "^14.0.0",
+    "front-matter": "^4.0.2",
+    "fuse.js": "^7.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["mcp", "obsidian", "vault", "notes", "knowledge-management"],
+  "author": "Obsidian Integration Developer",
+  "license": "MIT"
+}

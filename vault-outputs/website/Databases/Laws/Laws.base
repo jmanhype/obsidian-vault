@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Fundamental Laws
+    filters:
+      and:
+        - 'file.hasTag("law")'

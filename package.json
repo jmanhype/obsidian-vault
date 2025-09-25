@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "http-proxy-middleware": "^3.0.5"
+  }
+}

@@ -1,0 +1,149 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Setup Development Environment and Plugin Structure",
+        "description": "Set up the initial development environment and create the basic Obsidian plugin structure using TypeScript.",
+        "details": "1. Initialize a new TypeScript project with npm\n2. Install required dependencies (React, D3.js, WebSocket libraries)\n3. Create the basic Obsidian plugin structure following the official plugin development guidelines\n4. Set up the manifest.json file with appropriate metadata\n5. Implement the main plugin class that extends Obsidian's Plugin class\n6. Create folder structure for components, services, and utilities\n7. Set up build process with esbuild or webpack\n8. Configure TypeScript compiler options\n9. Implement basic plugin activation and deactivation hooks\n10. Create a simple settings tab for configuration",
+        "testStrategy": "1. Verify plugin loads correctly in Obsidian test vault\n2. Confirm settings tab appears and persists configuration\n3. Test build process produces valid output\n4. Validate TypeScript compilation works without errors\n5. Ensure plugin can be enabled and disabled without errors",
+        "priority": "high",
+        "dependencies": [],
+        "status": "in-progress",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement MCP Server Communication Module",
+        "description": "Develop the core communication module for interacting with MCP servers, including connection management and API integration.",
+        "details": "1. Create a ServerConnection class to handle WebSocket connections\n2. Implement connection pooling for multiple servers\n3. Add authentication with API key validation\n4. Create methods for server health checks\n5. Implement reconnection logic with exponential backoff\n6. Add event listeners for connection status changes\n7. Create a message queue for offline operation\n8. Implement serialization/deserialization of messages\n9. Add error handling and logging\n10. Create a configuration interface for server endpoints\n\nExample connection code:\n```typescript\nclass MCPServerConnection {\n  private socket: WebSocket;\n  private apiKey: string;\n  private endpoint: string;\n  private status: ConnectionStatus = ConnectionStatus.DISCONNECTED;\n  \n  constructor(endpoint: string, apiKey: string) {\n    this.endpoint = endpoint;\n    this.apiKey = apiKey;\n  }\n  \n  connect(): Promise<boolean> {\n    return new Promise((resolve, reject) => {\n      this.socket = new WebSocket(this.endpoint);\n      \n      this.socket.onopen = () => {\n        this.authenticate()\n          .then(() => {\n            this.status = ConnectionStatus.CONNECTED;\n            resolve(true);\n          })\n          .catch(err => reject(err));\n      };\n      \n      this.socket.onerror = (error) => {\n        this.status = ConnectionStatus.ERROR;\n        reject(error);\n      };\n    });\n  }\n  \n  // Additional methods...\n}\n```",
+        "testStrategy": "1. Unit tests for connection class with mock WebSocket\n2. Integration tests with test MCP server\n3. Test reconnection logic by simulating network failures\n4. Verify authentication flow works with valid and invalid API keys\n5. Test message queuing during offline operation\n6. Validate error handling for various failure scenarios",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Design and Implement Data Models",
+        "description": "Create the core data models for notes, templates, servers, and AI analysis results to be used throughout the application.",
+        "details": "1. Define interfaces for all data models\n2. Create Note model with metadata, content, and classification properties\n3. Implement Template model with structure and auto-fill capabilities\n4. Design Server model for MCP server metadata and status\n5. Create AI Analysis Result model for storing classification and suggestion data\n6. Implement serialization/deserialization methods for persistence\n7. Add validation methods for each model\n8. Create factory methods for instantiating models\n9. Implement relationship mapping between models\n10. Add versioning support for backward compatibility\n\nExample data models:\n```typescript\ninterface Note {\n  id: string;\n  title: string;\n  content: string;\n  path: string;\n  tags: string[];\n  createdAt: Date;\n  modifiedAt: Date;\n  entropyLevel?: EntropyLevel;\n  classification?: Classification;\n  relatedNotes?: string[];\n}\n\ninterface Template {\n  id: string;\n  name: string;\n  structure: string;\n  suggestedTags: string[];\n  applicableTypes: NoteType[];\n  metadataFields: MetadataField[];\n}\n\ninterface MCPServer {\n  id: string;\n  name: string;\n  endpoint: string;\n  apiKey: string;\n  status: ConnectionStatus;\n  capabilities: ServerCapability[];\n  lastConnected?: Date;\n}\n```",
+        "testStrategy": "1. Unit tests for model validation\n2. Test serialization/deserialization with sample data\n3. Verify relationship mapping between models\n4. Test factory methods with various inputs\n5. Validate backward compatibility with older data formats",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Develop MCP Server Integration Dashboard",
+        "description": "Create a visual dashboard for monitoring and managing connected MCP servers with real-time status updates and management controls.",
+        "details": "1. Create React components for the dashboard UI\n2. Implement D3.js visualizations for server status\n3. Add WebSocket listeners for real-time updates\n4. Create server management controls (add/remove/restart)\n5. Implement API key validation interface\n6. Add health check indicators\n7. Create connection history visualization\n8. Implement server configuration editor\n9. Add notification system for status changes\n10. Create responsive layout for different screen sizes\n\nExample dashboard component:\n```typescript\nconst ServerDashboard: React.FC<ServerDashboardProps> = ({ servers }) => {\n  const [selectedServer, setSelectedServer] = useState<string | null>(null);\n  \n  const handleServerAction = (serverId: string, action: ServerAction) => {\n    // Implementation for server actions\n  };\n  \n  return (\n    <div className=\"server-dashboard\">\n      <div className=\"server-list\">\n        {servers.map(server => (\n          <ServerCard \n            key={server.id}\n            server={server}\n            isSelected={selectedServer === server.id}\n            onSelect={() => setSelectedServer(server.id)}\n            onAction={handleServerAction}\n          />\n        ))}\n      </div>\n      \n      <div className=\"server-details\">\n        {selectedServer && (\n          <ServerDetailView \n            server={servers.find(s => s.id === selectedServer)!}\n            onAction={handleServerAction}\n          />\n        )}\n      </div>\n    </div>\n  );\n};\n```",
+        "testStrategy": "1. Component tests with React Testing Library\n2. Test real-time updates with mock WebSocket events\n3. Verify server management controls function correctly\n4. Test responsive layout at different viewport sizes\n5. Validate visualization accuracy with sample data\n6. Test notification system for various status changes",
+        "priority": "medium",
+        "dependencies": [
+          2,
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Implement AI-Powered Note Classification System",
+        "description": "Develop the system for automatically analyzing and categorizing notes based on content, applying appropriate tags, and detecting entropy levels.",
+        "details": "1. Create a NoteClassifier service to analyze note content\n2. Implement integration with multiple AI models (Claude, GPT, Gemini)\n3. Design prompts for content analysis and classification\n4. Create entropy detection algorithm based on technical content\n5. Implement tag suggestion based on content analysis\n6. Add database categorization logic\n7. Create batch processing for analyzing multiple notes\n8. Implement caching for classification results\n9. Add rate limiting for API calls\n10. Create fallback mechanisms for offline operation\n\nExample classification service:\n```typescript\nclass NoteClassifier {\n  private aiService: AIService;\n  private cache: LRUCache<string, ClassificationResult>;\n  \n  constructor(aiService: AIService) {\n    this.aiService = aiService;\n    this.cache = new LRUCache<string, ClassificationResult>(100);\n  }\n  \n  async classifyNote(note: Note): Promise<ClassificationResult> {\n    const cacheKey = `${note.id}-${note.modifiedAt.getTime()}`;\n    \n    if (this.cache.has(cacheKey)) {\n      return this.cache.get(cacheKey)!;\n    }\n    \n    const prompt = this.buildClassificationPrompt(note);\n    const aiResponse = await this.aiService.getCompletion(prompt);\n    \n    const result = this.parseClassificationResponse(aiResponse);\n    this.cache.set(cacheKey, result);\n    \n    return result;\n  }\n  \n  private buildClassificationPrompt(note: Note): string {\n    // Implementation\n  }\n  \n  private parseClassificationResponse(response: string): ClassificationResult {\n    // Implementation\n  }\n}\n```",
+        "testStrategy": "1. Unit tests for classification logic\n2. Integration tests with mock AI responses\n3. Test entropy detection with sample technical content\n4. Verify tag suggestion accuracy with known content\n5. Test rate limiting and caching behavior\n6. Validate batch processing with multiple notes\n7. Test fallback mechanisms during offline operation",
+        "priority": "high",
+        "dependencies": [
+          3
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 6,
+        "title": "Develop Smart Template Selection System",
+        "description": "Create a system that detects note type, suggests appropriate templates, auto-fills metadata, and generates initial structure based on note purpose.",
+        "details": "1. Implement TemplateManager service for template operations\n2. Create note type detection algorithm based on content and context\n3. Implement template matching logic\n4. Add metadata extraction and auto-fill capabilities\n5. Create GIF suggestion service for visual enhancement\n6. Implement initial structure generation based on note purpose\n7. Add template application with user confirmation\n8. Create template customization interface\n9. Implement template versioning\n10. Add template sharing capabilities\n\nExample template selection logic:\n```typescript\nclass TemplateSelector {\n  private templates: Template[];\n  private aiService: AIService;\n  \n  constructor(templates: Template[], aiService: AIService) {\n    this.templates = templates;\n    this.aiService = aiService;\n  }\n  \n  async suggestTemplate(note: Note): Promise<TemplateSuggestion> {\n    const noteType = await this.detectNoteType(note);\n    \n    const matchingTemplates = this.templates.filter(template => \n      template.applicableTypes.includes(noteType)\n    );\n    \n    if (matchingTemplates.length === 0) {\n      return { template: null, confidence: 0, metadata: {} };\n    }\n    \n    const rankedTemplates = this.rankTemplatesByRelevance(matchingTemplates, note);\n    const bestTemplate = rankedTemplates[0];\n    \n    const extractedMetadata = await this.extractMetadata(note, bestTemplate);\n    \n    return {\n      template: bestTemplate,\n      confidence: this.calculateConfidence(bestTemplate, note),\n      metadata: extractedMetadata\n    };\n  }\n  \n  private async detectNoteType(note: Note): Promise<NoteType> {\n    // Implementation using AI service\n  }\n  \n  private rankTemplatesByRelevance(templates: Template[], note: Note): Template[] {\n    // Implementation\n  }\n  \n  private async extractMetadata(note: Note, template: Template): Promise<Record<string, any>> {\n    // Implementation\n  }\n}\n```",
+        "testStrategy": "1. Unit tests for template selection logic\n2. Test note type detection with various content samples\n3. Verify metadata extraction accuracy\n4. Test template ranking with different templates and notes\n5. Validate GIF suggestion relevance\n6. Test template application with user confirmation\n7. Verify template versioning and compatibility",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 7,
+        "title": "Implement Task Master Workflow Automation",
+        "description": "Develop the system for automatically parsing PRDs from meeting notes, generating tasks with priority scoring, and tracking progress with visual indicators.",
+        "details": "1. Create PRDParser service for extracting requirements from meeting notes\n2. Implement TaskGenerator for creating tasks from requirements\n3. Add priority scoring algorithm based on dependencies and importance\n4. Create progress tracking system with status updates\n5. Implement Kanban board integration\n6. Add visual indicators for task status and progress\n7. Create notification system for task updates\n8. Implement task assignment and ownership\n9. Add due date calculation and reminder system\n10. Create reporting and analytics for task completion\n\nExample PRD parsing logic:\n```typescript\nclass PRDParser {\n  private aiService: AIService;\n  \n  constructor(aiService: AIService) {\n    this.aiService = aiService;\n  }\n  \n  async parseRequirements(meetingNotes: string): Promise<Requirement[]> {\n    const prompt = this.buildParsingPrompt(meetingNotes);\n    const aiResponse = await this.aiService.getCompletion(prompt);\n    \n    return this.parseRequirementsFromResponse(aiResponse);\n  }\n  \n  private buildParsingPrompt(meetingNotes: string): string {\n    return `Extract product requirements from the following meeting notes:\n\n${meetingNotes}\n\nFormat each requirement as:\n- Requirement: [description]\n- Priority: [high/medium/low]\n- Dependencies: [list of dependencies]\n- Acceptance Criteria: [criteria]`;\n  }\n  \n  private parseRequirementsFromResponse(response: string): Requirement[] {\n    // Implementation to parse structured response\n  }\n}\n```",
+        "testStrategy": "1. Unit tests for PRD parsing logic\n2. Test task generation with sample requirements\n3. Verify priority scoring algorithm\n4. Test progress tracking with status updates\n5. Validate Kanban board integration\n6. Test notification system for various task events\n7. Verify reporting and analytics accuracy",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 8,
+        "title": "Develop Knowledge Base Intelligence System",
+        "description": "Create a system that identifies knowledge gaps, suggests areas for expansion, detects outdated information, and generates relationship maps between concepts.",
+        "details": "1. Implement KnowledgeAnalyzer service for vault analysis\n2. Create gap detection algorithm based on reference patterns\n3. Implement suggestion engine for content expansion\n4. Add outdated information detection based on modification dates and references\n5. Create relationship mapping using graph algorithms\n6. Implement D3.js visualizations for concept relationships\n7. Add knowledge scoring system\n8. Create recommendation engine for further reading\n9. Implement batch analysis for large vaults\n10. Add scheduled analysis for ongoing maintenance\n\nExample knowledge gap detection:\n```typescript\nclass KnowledgeGapDetector {\n  private vault: Vault;\n  private graph: ConceptGraph;\n  \n  constructor(vault: Vault) {\n    this.vault = vault;\n    this.graph = new ConceptGraph();\n  }\n  \n  async buildKnowledgeGraph(): Promise<void> {\n    const notes = await this.vault.getAllNotes();\n    \n    for (const note of notes) {\n      const concepts = await this.extractConcepts(note);\n      const references = this.extractReferences(note);\n      \n      this.graph.addNode(note.id, {\n        title: note.title,\n        concepts,\n        lastModified: note.modifiedAt\n      });\n      \n      for (const ref of references) {\n        this.graph.addEdge(note.id, ref.targetId, {\n          type: ref.type,\n          context: ref.context\n        });\n      }\n    }\n  }\n  \n  findKnowledgeGaps(): KnowledgeGap[] {\n    const gaps: KnowledgeGap[] = [];\n    \n    // Find referenced concepts with no dedicated notes\n    const conceptReferences = this.graph.getConceptReferences();\n    \n    for (const [concept, references] of Object.entries(conceptReferences)) {\n      if (references.length > 3 && !this.hasConceptNote(concept)) {\n        gaps.push({\n          type: 'MissingConcept',\n          concept,\n          references,\n          importance: this.calculateImportance(references)\n        });\n      }\n    }\n    \n    // Find other types of gaps...\n    \n    return gaps;\n  }\n  \n  private async extractConcepts(note: Note): Promise<string[]> {\n    // Implementation\n  }\n  \n  private extractReferences(note: Note): Reference[] {\n    // Implementation\n  }\n}\n```",
+        "testStrategy": "1. Unit tests for knowledge graph construction\n2. Test gap detection with sample vault data\n3. Verify outdated information detection\n4. Test relationship mapping accuracy\n5. Validate visualization correctness\n6. Test recommendation engine relevance\n7. Verify batch analysis performance with large datasets",
+        "priority": "medium",
+        "dependencies": [
+          3,
+          5
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 9,
+        "title": "Implement AI Model Integration and Management",
+        "description": "Develop the system for integrating multiple AI models (Claude, GPT, Gemini) with context-aware prompting, batch processing, and error handling.",
+        "details": "1. Create AIService interface for model abstraction\n2. Implement model-specific adapters (Claude, GPT, Gemini)\n3. Add context-aware prompt generation\n4. Implement rate limiting and quota management\n5. Create batch processing for efficient API usage\n6. Add error handling and fallback mechanisms\n7. Implement response parsing and validation\n8. Create caching system for API responses\n9. Add model selection based on task requirements\n10. Implement cost optimization strategies\n\nExample AI service implementation:\n```typescript\ninterface AIModelAdapter {\n  getCompletion(prompt: string, options?: CompletionOptions): Promise<string>;\n  getEmbedding(text: string): Promise<number[]>;\n  supportsBatch: boolean;\n  getBatchCompletions?(prompts: string[], options?: CompletionOptions): Promise<string[]>;\n}\n\nclass AIService {\n  private adapters: Record<AIModelType, AIModelAdapter>;\n  private cache: LRUCache<string, string>;\n  private rateLimiter: RateLimiter;\n  \n  constructor() {\n    this.adapters = {\n      [AIModelType.GPT]: new GPTAdapter(),\n      [AIModelType.CLAUDE]: new ClaudeAdapter(),\n      [AIModelType.GEMINI]: new GeminiAdapter()\n    };\n    \n    this.cache = new LRUCache<string, string>(200);\n    this.rateLimiter = new RateLimiter();\n  }\n  \n  async getCompletion(prompt: string, modelType: AIModelType = AIModelType.GPT, options?: CompletionOptions): Promise<string> {\n    const cacheKey = this.getCacheKey(prompt, modelType, options);\n    \n    if (this.cache.has(cacheKey)) {\n      return this.cache.get(cacheKey)!;\n    }\n    \n    await this.rateLimiter.acquire(modelType);\n    \n    try {\n      const adapter = this.adapters[modelType];\n      const result = await adapter.getCompletion(prompt, options);\n      \n      this.cache.set(cacheKey, result);\n      return result;\n    } catch (error) {\n      if (this.shouldFallback(error, modelType)) {\n        const fallbackModel = this.getFallbackModel(modelType);\n        return this.getCompletion(prompt, fallbackModel, options);\n      }\n      throw error;\n    } finally {\n      this.rateLimiter.release(modelType);\n    }\n  }\n  \n  // Additional methods...\n}\n```",
+        "testStrategy": "1. Unit tests for each model adapter\n2. Test rate limiting behavior\n3. Verify caching system works correctly\n4. Test fallback mechanisms with simulated errors\n5. Validate batch processing efficiency\n6. Test context-aware prompt generation\n7. Verify cost optimization strategies",
+        "priority": "high",
+        "dependencies": [
+          1,
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 10,
+        "title": "Implement UI/UX Refinement and Performance Optimization",
+        "description": "Polish the user interface, optimize performance, create documentation, and perform testing and bug fixes.",
+        "details": "1. Conduct UI/UX review and implement improvements\n2. Optimize React component rendering\n3. Implement performance profiling and monitoring\n4. Add loading states and progress indicators\n5. Create comprehensive user documentation\n6. Implement developer documentation with JSDoc\n7. Optimize database queries and caching\n8. Add error boundaries and graceful degradation\n9. Implement automated testing suite\n10. Conduct user testing and fix identified issues\n\nExample performance optimization:\n```typescript\nclass PerformanceMonitor {\n  private metrics: Record<string, PerformanceMetric[]> = {};\n  private thresholds: Record<string, number> = {\n    'note-classification': 500, // ms\n    'template-suggestion': 300, // ms\n    'knowledge-graph-update': 2000 // ms\n  };\n  \n  startTimer(operation: string): () => void {\n    const start = performance.now();\n    \n    return () => {\n      const duration = performance.now() - start;\n      this.recordMetric(operation, duration);\n      \n      if (duration > this.thresholds[operation]) {\n        console.warn(`Performance warning: ${operation} took ${duration}ms (threshold: ${this.thresholds[operation]}ms)`);\n      }\n    };\n  }\n  \n  private recordMetric(operation: string, duration: number): void {\n    if (!this.metrics[operation]) {\n      this.metrics[operation] = [];\n    }\n    \n    this.metrics[operation].push({\n      timestamp: Date.now(),\n      duration\n    });\n    \n    // Keep only the last 100 metrics per operation\n    if (this.metrics[operation].length > 100) {\n      this.metrics[operation].shift();\n    }\n  }\n  \n  getAverageMetrics(): Record<string, number> {\n    const result: Record<string, number> = {};\n    \n    for (const [operation, metrics] of Object.entries(this.metrics)) {\n      const total = metrics.reduce((sum, metric) => sum + metric.duration, 0);\n      result[operation] = total / metrics.length;\n    }\n    \n    return result;\n  }\n}\n```",
+        "testStrategy": "1. Conduct performance benchmarks before and after optimization\n2. Test UI components across different devices and screen sizes\n3. Verify documentation accuracy and completeness\n4. Conduct user acceptance testing\n5. Run automated test suite for regression testing\n6. Test error handling with simulated failures\n7. Verify graceful degradation in offline mode",
+        "priority": "medium",
+        "dependencies": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-22T13:27:16.845Z",
+      "updated": "2025-08-23T15:22:31.456Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

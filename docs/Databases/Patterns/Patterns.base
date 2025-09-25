@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Design Patterns
+    filters:
+      and:
+        - file.hasTag("pattern")

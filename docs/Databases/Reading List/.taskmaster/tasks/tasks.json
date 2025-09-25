@@ -1,0 +1,77 @@
+{
+  "master": {
+    "tasks": [
+      {
+        "id": 1,
+        "title": "Set up Reading List Data Structure",
+        "description": "Design and implement the core data structure for the reading list system that will store books, articles, and papers with their metadata.",
+        "details": "Create a database schema with the following tables:\n1. ReadingItems (id, title, author, type, url, total_pages, estimated_time, deadline, priority_score, date_added)\n2. ReadingProgress (item_id, current_page, time_spent, completion_percentage, last_read_date)\n3. Notes (item_id, page_number, content, is_key_takeaway, created_at)\n4. Tags (id, name)\n5. ItemTags (item_id, tag_id)\n\nImplement API endpoints for CRUD operations on reading items. Create data validation for all input fields. Set up initial database migrations and seed data for testing. Use a relational database for structured data relationships.",
+        "testStrategy": "1. Unit tests for data models and validation\n2. API endpoint tests for all CRUD operations\n3. Database migration tests\n4. Performance tests with large dataset\n5. Data integrity tests for relationships between tables",
+        "priority": "high",
+        "dependencies": [],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 2,
+        "title": "Implement Reading Progress Tracking System",
+        "description": "Build functionality to track reading progress, speed analytics, and comprehension metrics for each reading item.",
+        "details": "Develop components for:\n1. Progress tracking: Allow users to update current page/percentage complete\n2. Reading speed calculation: Track time spent reading and calculate words-per-minute\n3. Reading session logging: Record start/end times and pages covered\n4. Progress visualization: Create charts showing reading velocity and completion trends\n5. Comprehension notes: Allow users to add notes tied to specific pages/sections\n6. Key takeaway flagging: Enable marking important insights\n\nImplement a timer feature that can be started/paused during reading sessions. Store historical reading speed data to improve time estimations.",
+        "testStrategy": "1. Unit tests for progress calculation algorithms\n2. Integration tests for the timer functionality\n3. User acceptance tests for the note-taking interface\n4. Performance tests for data visualization components\n5. End-to-end tests for complete reading session workflows",
+        "priority": "high",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 3,
+        "title": "Develop Smart Prioritization Engine",
+        "description": "Create an AI-powered recommendation system that prioritizes reading items based on user projects, deadlines, and reading patterns.",
+        "details": "Build a recommendation engine with:\n1. Priority scoring algorithm based on:\n   - Relevance to current projects (user-defined)\n   - Deadlines proximity\n   - Estimated reading time vs. available time\n   - User-defined importance\n2. Reading time estimation based on:\n   - Item length (pages/words)\n   - User's historical reading speed for similar content\n   - Content complexity estimation\n3. Deadline management features:\n   - Calendar integration\n   - Reading schedule generation\n   - Notifications for approaching deadlines\n\nImplement machine learning model to improve recommendations over time based on user behavior and feedback.",
+        "testStrategy": "1. Unit tests for priority scoring algorithms\n2. A/B testing for recommendation accuracy\n3. Validation tests for reading time estimations against actual completion times\n4. Integration tests for calendar functionality\n5. User feedback collection and analysis for recommendation quality",
+        "priority": "medium",
+        "dependencies": [
+          1,
+          2
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 4,
+        "title": "Build Note Extraction and Management System",
+        "description": "Implement functionality for users to capture, organize, and retrieve notes, quotes, and insights from reading materials.",
+        "details": "Create a comprehensive note management system with:\n1. Rich text editor for note-taking with formatting options\n2. Quote extraction with source attribution\n3. Tagging system for categorizing notes\n4. Search functionality across all notes\n5. Export options (PDF, Markdown, plain text)\n6. Automatic organization by reading item, date, and tags\n\nImplement a sidebar interface that allows note-taking while reading. Include OCR capabilities for extracting text from images/PDFs. Create a highlighting system for digital texts that automatically saves highlighted sections as notes.",
+        "testStrategy": "1. Unit tests for note creation and retrieval\n2. Usability testing for the note-taking interface\n3. Integration tests for export functionality\n4. Performance tests for search capabilities\n5. Security tests for data protection\n6. Cross-platform compatibility tests",
+        "priority": "medium",
+        "dependencies": [
+          1
+        ],
+        "status": "pending",
+        "subtasks": []
+      },
+      {
+        "id": 5,
+        "title": "Implement Knowledge Synthesis Tools",
+        "description": "Develop tools for automatic summary generation, cross-referencing between materials, and knowledge integration across the reading list.",
+        "details": "Build advanced knowledge synthesis features:\n1. Automatic summary generation:\n   - Use NLP to create summaries of reading materials\n   - Generate chapter/section summaries and overall content synopsis\n2. Cross-reference system:\n   - Identify connections between different reading materials\n   - Suggest related content based on topics and concepts\n3. Insight network visualization:\n   - Create knowledge graphs connecting related concepts\n   - Visualize relationships between different reading materials\n4. Reading group functionality:\n   - Allow sharing of notes and insights with groups\n   - Enable collaborative annotation and discussion\n\nImplement AI algorithms for text analysis and concept extraction. Create visualization tools for knowledge mapping.",
+        "testStrategy": "1. Accuracy testing for auto-generated summaries\n2. User validation of cross-reference suggestions\n3. Performance testing for knowledge graph generation\n4. Integration tests for sharing functionality\n5. A/B testing for different visualization approaches\n6. User acceptance testing for the complete knowledge synthesis workflow",
+        "priority": "low",
+        "dependencies": [
+          1,
+          2,
+          4
+        ],
+        "status": "pending",
+        "subtasks": []
+      }
+    ],
+    "metadata": {
+      "created": "2025-08-22T13:45:11.051Z",
+      "updated": "2025-08-22T13:45:11.051Z",
+      "description": "Tasks for master context"
+    }
+  }
+}

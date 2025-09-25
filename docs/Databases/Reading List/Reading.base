@@ -1,0 +1,6 @@
+views:
+  - type: table
+    name: Reading List
+    filters:
+      and:
+        - file.hasTag("reading")

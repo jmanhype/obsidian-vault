@@ -1,0 +1,63 @@
+filters:
+  and:
+    - file.inFolder("Notion API Import/AI and ML Architecture Resources")
+    - file.ext == "md"
+    - file.name != "_index"
+properties:
+  title:
+    displayName: Title
+  database:
+    displayName: Database
+  code_availability:
+    displayName: Code Availability
+  impact_factor:
+    displayName: Impact Factor
+  dataset_used:
+    displayName: Dataset Used
+  followup_actions:
+    displayName: Follow-Up Actions
+  technology_domain:
+    displayName: Technology Domain
+  publication_date:
+    displayName: Publication Date
+  status:
+    displayName: Status
+  methodology:
+    displayName: Methodology
+  detail_stage:
+    displayName: Detail Stage
+  abstractsummary:
+    displayName: Abstract/Summary
+  date:
+    displayName: Date
+  notes:
+    displayName: Notes
+  select:
+    displayName: Select
+  attachments:
+    displayName: Attachments
+  application_to_projects:
+    displayName: Application to Projects
+  tags:
+    displayName: Tags
+  relevance_score:
+    displayName: Relevance Score
+  sourcelink:
+    displayName: Source/Link
+  resultsfindings:
+    displayName: Results/Findings
+  authors:
+    displayName: Authors
+  cited_by:
+    displayName: Cited By
+  contributors:
+    displayName: Contributors
+views:
+  - type: table
+    name: AI and ML Architecture Resources
+    order:
+      - file.name
+  - type: table
+    name: Recent
+    order:
+      - file.mtime

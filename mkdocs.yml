@@ -1,0 +1,77 @@
+site_name: Obsidian Knowledge Vault
+site_description: Personal knowledge management system
+site_author: Speed
+site_url: https://vault.example.com
+site_dir: vault-outputs/website
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist
+  - admonition
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Knowledge Base:
+    - Apollo Dagger: Databases/Knowledge Base/Apollo Dagger Integration.md
+    - Apollo Setup: Databases/Knowledge Base/Apollo Dagger Setup Guide.md
+    - MCP Capabilities: Databases/Knowledge Base/Apollo Dagger MCP Capabilities.md
+    - Vault Automation: Databases/Knowledge Base/Vault Automation Summary.md
+    - Containerized Ops: Databases/Knowledge Base/Containerized Vault Operations Summary.md
+  - Patterns:
+    - TaskMaster: Databases/Patterns/TaskMaster Obsidian Kanban Pattern.md
+    - Singleton: Databases/Patterns/Singleton Pattern.md
+    - Container Control: Databases/Patterns/Natural Language Container Control Pattern.md
+    - Guard Clause: Databases/Patterns/Guard Clause Pattern.md
+  - Principles:
+    - YAGNI: Databases/Principles/YAGNI.md
+    - Make It Work: Databases/Principles/Make It Work Then Make It Right.md
+    - Natural Language: Databases/Principles/Natural Language as Universal Interface.md
+    - Semantic Identity: Databases/Principles/Filter by Semantic Identity Not Physical Location.md
+  - Laws:
+    - Gall's Law: Databases/Laws/Gall's Law.md
+    - Conway's Law: Databases/Laws/Conway's Law.md
+  - Reading List:
+    - Atomic Habits: Databases/Reading List/Atomic Habits.md
+    - Deep Work: Databases/Reading List/Deep Work.md
+    - Smart Notes: Databases/Reading List/How to Take Smart Notes.md
+    - Phoenix Project: Databases/Reading List/The Phoenix Project.md
+  - Projects:
+    - Mobile App: Databases/Projects/Mobile App Development.md
+    - Marketing: Databases/Projects/Q1 Marketing Campaign.md
+    - Migration: Databases/Projects/Content Migration.md
+    - Website: Databases/Projects/Website Redesign.md
