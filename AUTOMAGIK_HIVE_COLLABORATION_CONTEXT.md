@@ -180,8 +180,80 @@ npx automagik-forge  # Kanban parallelization + 1-click PR
 - **Quality Expectations**: Production system standards
   - *Mitigation*: TDD approach and measurable contribution metrics
 
+## Latest Developments (September 25, 2025)
+
+### Critical Deployment Task from Felipe
+- **Date**: September 18-25, 2025 conversation
+- **Task**: Deploy complete Automagik stack (Hive + Omni + Evolution)
+- **Requirements**:
+  - Use dev branch for Hive (no more genie agents in dev)
+  - Use dev branch + PR #25 for Omni (unified messaging)
+  - Integrate WhatsApp via Evolution API
+  - Discord integration required
+  - Production-ready deployment
+
+### Branch Configuration Discovery
+```yaml
+deployment_configuration:
+  automagik-hive: dev branch
+  automagik-omni: dev branch + PR #25
+  automagik-evolution: main branch (Docker)
+  automagik-forge: v0.3.9 (stable, no changes)
+```
+
+### Felipe's Feedback Points
+1. **Branch Issue**: "Actually u did it on an old or wrong branch. Dev doesnt even have genie agents anymore"
+2. **Urgency**: Need to show measurable progress immediately
+3. **Production Focus**: System has paying customers, quality is critical
+
+### Investigation Findings
+
+#### Automagik Omni (PR #25)
+- **Purpose**: Unified messaging hub for WhatsApp/Discord/Slack
+- **Key Feature**: Multi-tenant instance management
+- **Integration**: Direct webhook system to Evolution API
+- **Status**: PR #25 adds unified message handling
+
+#### Automagik Hive (Dev Branch)
+- **Changes**: Removed genie agents, streamlined architecture
+- **Focus**: Production stability over experimental features
+- **Integration**: Receives messages from Omni, orchestrates AI responses
+
+#### Evolution API Setup
+- **Components**: PostgreSQL, Redis, RabbitMQ, Evolution API
+- **Purpose**: WhatsApp Business API provider
+- **Configuration**: Requires instance creation and webhook setup
+
+### Deployment Architecture
+```
+User Message (WhatsApp/Discord)
+          ↓
+    Evolution API
+          ↓
+    Omni Hub (PR #25)
+          ↓
+    Hive Orchestrator (dev)
+          ↓
+    AI Agent Response
+          ↓
+    Back to User
+```
+
+### Action Items Completed
+- [x] Investigated all three repositories
+- [x] Identified correct branches and versions
+- [x] Created comprehensive deployment plan
+- [x] Documented integration architecture
+
+### Pending Actions
+- [ ] Execute actual deployment
+- [ ] Test WhatsApp integration end-to-end
+- [ ] Verify Discord functionality
+- [ ] Report completion to Felipe
+
 ---
 
 *Document created: August 29, 2025*  
-*Status: Active collaboration context*  
-*Next Review: Weekly sync with Felipe Rosa*
+*Last Updated: September 25, 2025*  
+*Status: Active collaboration - Critical deployment pending*  
+*Next Review: After deployment completion*
