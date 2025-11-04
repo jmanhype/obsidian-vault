@@ -1,0 +1,32 @@
+# Python dependencies for Obsidian Vault automation scripts
+# Install with: pip install -r requirements.txt
+
+# HTTP requests for API interactions
+requests>=2.31.0
+
+# YAML parsing for configuration files
+pyyaml>=6.0
+
+# Type checking (optional, for development)
+# mypy>=1.0.0
+
+# Testing (optional, for development)
+# pytest>=7.4.0
+# pytest-cov>=4.1.0
+
+# Note: The following are part of Python standard library and don't need installation:
+# - json
+# - os
+# - sys
+# - pathlib
+# - datetime
+# - typing
+# - argparse
+# - re
+# - subprocess
+# - asyncio
+# - shutil
+# - sqlite3
+# - gzip
+# - hashlib
+# - collections
